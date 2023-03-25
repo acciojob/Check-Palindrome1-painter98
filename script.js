@@ -1,14 +1,14 @@
 // complete the given function
 function palindrome(str){
-/*let start=0,end=str.length-1,ans;
-
+let start=0,end=str.length-1,ans;
+str=str.toLowerCase();
 while(start<end){
     if(str.charAt(start++)!=str.charAt(end--)){
        return false;
     }
 }
-	return true;*/
-	var re = /[^A-Za-z0-9]/g; // or var re = /[\W_]/g;
+	return true;
+	/*var re = /[^A-Za-z0-9]/g; // or var re = /[\W_]/g;
  str = str.toLowerCase().replace(re, '');
 
  // Step 2. Create the FOR loop
@@ -20,6 +20,6 @@ while(start<end){
    }
 	 }
  return true; // Both parts are strictly equal, it returns true => The string is a palindrome
-
+*/
 }
 module.exports = palindrome
