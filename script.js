@@ -20,4 +20,6 @@ while(start<end){
        return false; // When the characters don't match anymore, false is returned and we exit the FOR loop
    }
 }
+	return true;
+}
 module.exports = palindrome
