@@ -1,7 +1,7 @@
 // complete the given function
 function palindrome(str){
 let start=0,end=str.length-1,ans;
-str=str.toLowerCase();
+str=str.toLowerCase().replace([^A-Za-z0-9],"");
 while(start<end){
     if(str.charAt(start++)!=str.charAt(end--)){
        return false;
